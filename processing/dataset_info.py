@@ -112,76 +112,7 @@ if __name__ == "__main__":
     # df = df[["hf_dataset_key","source_key","target_key","flan_prompt"]]
     # df.to_csv('hf_datasets.csv',index=False)
 
-    # dataset_name =  'billsum'
-    # PROMPT = 'Summarize the following proposed legislation (bill): '
-    # COL_MAP = ['text', "summary"]
-    # DATASET_KEYS = ['train','test']
-    # x = HFDataset(col_map=COL_MAP, dataset_name=dataset_name, prompt=PROMPT,dataset_keys=DATASET_KEYS)
-    # x.get_datasets()
-    # }
-    #
-    # dataset_name = 'scitldr/AIC'
-    # PROMPT = "Given the following scientific article, provide a TL;DR summary: "
-    # COL_MAP = ['source', "target"]
-    # x = scitldr(col_map=COL_MAP, dataset_name=dataset_name, prompt=PROMPT)
-    # x.get_datasets()
-    # hf_keys = ['samsum','xsum','scitldr']
 
-    # dataset_name = 'samsum'
-    # PROMPT = "Briefly summarize in third person the following conversation: "
-    # COL_MAP = ['dialogue', "summary"]
-    #
-    # PROMPT = "Briefly summarize in third person the following conversation: "
-    # COL_MAP = ['dialogue',"summary"]}
-    #
-    # dataset_name = 'cnn_dailymail/3.0.0'
-    # PROMPT = 'Produce an article summary of the following news article: '
-    # COL_MAP = ['article',"highlights"]
-
-    # DATASET_NAME = 'wikihow'
-    # PROMPT = "Produce an article summary including outlines of each paragraph of the following article: "
-    # COL_MAP = ['text','headline']
-    # dataset_name = "wikihow/all"
-    # wikihow = HFDataset(col_map=COL_MAP,dataset_name= dataset_name,prompt=PROMPT)
-    # wikihow.get_datasets(data_dir='.')
-    #
-    # dataset_name = 'xsum'
-    # PROMPT = 'Given the following news article, summarize the article in one sentence: '
-    # COL_MAP = ['document', "summary"]
-    # x = HFDataset(col_map=COL_MAP,dataset_name= dataset_name,prompt=PROMPT)
-    # x.get_datasets()
-    #
-    # dataset_name = "cnn_dailymail/3.0.0"
-    # PROMPT = "Produce an article summary of the following news article: "
-    # COL_MAP = ["article", "highlights"]
-    #
-    # x = HFDataset(col_map=COL_MAP, dataset_name=dataset_name, prompt=PROMPT)
-    # x.get_datasets()
-    #
-    # dataset_name = "samsum"
-    # PROMPT = "Briefly summarize in third person the following conversation: "
-    # COL_MAP = ["dialogue", "summary"]
-    # x = HFDataset(col_map=COL_MAP, dataset_name=dataset_name, prompt=PROMPT)
-    # x.get_datasets()
-    #
-    # dataset_name = "scitldr/AIC"
-    # PROMPT = "Given the following scientific article, provide a TL;DR summary: "
-    # COL_MAP = ["source", "target"]
-    # x = scitldr(col_map=COL_MAP, dataset_name=dataset_name, prompt=PROMPT)
-    # x.get_datasets()
-    # hf_keys = ["samsum", "xsum", "scitldr"]
-    #
-    # dataset_name = "billsum"
-    # PROMPT = "Summarize the following proposed legislation (bill): "
-    # COL_MAP = ["text", "summary"]
-    # DATASET_KEYS = ["train", "test"]
-    # x = HFDataset(
-    #     col_map=COL_MAP,
-    #     dataset_name=dataset_name,
-    #     prompt=PROMPT,
-    #     dataset_keys=DATASET_KEYS,
-    # )
-    # x.get_datasets()
 
     # train = pd.read_parquet('df1.parquet', engine='pyarrow' )
     # df2 = pd.read_parquet('df2.parquet',engine='pyarrow')
