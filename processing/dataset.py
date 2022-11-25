@@ -63,12 +63,12 @@ class HFDataset:
     def process(self, train, val):
         return train, val
 
-    def get_datasets(self, data_dir=None):
+    def get_datasets(self,**kwargs):
         if len(self.dataset_name.split("/")) == 2:
             name = self.dataset_name.split("/")
-            df = datasets.load_dataset(name[0], name[1], data_dir=data_dir)
+            df = datasets.load_dataset(name[0], name[1], **kwargs)
         else:
-            df = datasets.load_dataset(self.dataset_name, data_dir=data_dir)
+            df = datasets.load_dataset(self.dataset_name, **kwargs)
         try:
             if self.dataset_keys[1] not in df.keys():
                 logger.fatal(f"{self.dataset_name} no validation")
