@@ -65,8 +65,8 @@ def merge_datasets():
 
 
 if __name__ == "__main__":
-    # df = pd.read_csv("hf_datasets.csv")
-    # process_datasets(df)
+    df = pd.read_csv("hf_datasets.csv")
+    process_datasets(df)
     merge_datasets()
 
 
